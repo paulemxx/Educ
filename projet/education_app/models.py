@@ -3,6 +3,7 @@ from tinymce import HTMLField
 from django.contrib.auth.models import User
 
 # Create your models here.
+"""Model definition for Education"""
 
 class Cours (models.Model):
     prof_id = models.ForeignKey(User, on_delete = models.CASCADE, related_name = 'user_cours')
@@ -49,5 +50,7 @@ class Theme (models.Model):
     statut = models.BooleanField(default = True)
     date_add = models.DateTimeField(auto_now_add= True)
     date_update = models.DateTimeField(auto_now= True)
+
+    
 
 

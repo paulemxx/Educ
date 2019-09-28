@@ -3,6 +3,7 @@ from tinymce import HTMLField
 from django.contrib.auth.models import User
 
 # Create your models here.
+"""Model definition for Blog"""
 
 class Categorie (models.Model):
     nom = models.CharField(max_length=225)

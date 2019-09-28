@@ -6,7 +6,7 @@ class Contact_us(models.Model):
 
     # TODO: Define fields here
     nom = models.CharField(max_length=50)
-    email = models.EmailField(max_lenght=255)
+    email = models.EmailField()
     sujet = models.CharField(max_length=50)
     message = models.TextField()
 
