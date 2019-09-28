@@ -1,8 +1,13 @@
 from django.shortcuts import render
+from blog_app.models import *
 
 # Create your views here.
 def index(request):
-    return render(request, 'pages/index.html')
+    cat_list = Categorie.objects.filter(statut=True)
+    data = {
+        'cat_list': cat_list,
+    }
+    return render(request, 'pages/index.html', data)
 
 def theme(request):
     return render(request, 'pages/coursdetail.html')
