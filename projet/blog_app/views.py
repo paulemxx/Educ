@@ -6,8 +6,8 @@ def blog(request):
     cat_list = Categorie.objects.filter(statut=True)
     articles = Artcle.objects.filter(statut=True)
     data = {
-        cat_list = cat_list,
-        articles = articles,
+        'cat_list': cat_list,
+        'articles': articles,
     }
     return render(request, 'pages/blog.html', data)
 
