@@ -20,8 +20,10 @@ from django.conf.urls.static import static
 from filebrowser.sites import site
 from . import views
 
-app_name='blog_app'
+app_name='education_app'
 urlpatterns = [
     path('', views.index, name='home'),
+    path('theme/', views.theme, name='detail'),
+    path('cours/', views.cours, name='cours'),
     
 ]

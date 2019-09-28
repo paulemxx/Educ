@@ -20,8 +20,8 @@ from django.conf.urls.static import static
 from filebrowser.sites import site
 from . import views
 
-app_name='blog_app'
+app_name='contact_app'
 urlpatterns = [
-    path('', views.index, name='home'),
+    path('', views.contact, name='contact'),
     
 ]

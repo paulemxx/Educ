@@ -21,11 +21,10 @@ from filebrowser.sites import site
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blog/', include('blog_app.urls')),
     path('', include('education_app.urls')),
+    path('blog/', include('blog_app.urls')),
     path('config/', include('config_app.urls')),
     path('contact/', include('contact_app.urls')),
-    path('education/', include('education_app.urls')),
     path('tinymce/', include('tinymce.urls')),
     path('admin/filebrowser/', site.urls),
 ]
