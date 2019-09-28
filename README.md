@@ -1,7 +1,7 @@
 # Educ
 le projet comporte 5 applications
 
-##blog_app
+## blog_app
 
     ```
 
@@ -57,7 +57,7 @@ le projet comporte 5 applications
 
     ```
 
-##education_app
+## education_app
 
     ```
     from django.db import models
@@ -156,7 +156,7 @@ le projet comporte 5 applications
     #./manage.py admin_generator APP_NAME >> APP_NAME/admin.py
     ```
 
-##contact
+## contact
 
     ```
     from django.db import models
@@ -207,4 +207,4 @@ le projet comporte 5 applications
 
     ```
     
-##config
+## config
