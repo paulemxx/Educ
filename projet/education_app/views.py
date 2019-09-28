@@ -9,3 +9,9 @@ def theme(request):
 
 def cours(request):
     return render(request, 'pages/cours.html')
+
+def about(request):
+    return render(request, 'pages/about.html')
+
+def category(request):
+    return render(request, 'pages/category.html')
