@@ -15,3 +15,9 @@ def about(request):
 
 def category(request):
     return render(request, 'pages/category.html')
+
+def login(request):
+    return render(request, 'pages/login.html')
+
+def register(request):
+    return render(request, 'pages/register.html')
