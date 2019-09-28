@@ -23,7 +23,7 @@ from . import views
 app_name='blog_app'
 urlpatterns = [
     path('', views.blog, name='blog'),
-    #path('/category/', views.category, name='category'),
+    path('/categorie/', views.categorie, name='categorie'),
     #path('/article/', views.category, name='article'),
 
     
