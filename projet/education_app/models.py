@@ -90,3 +90,6 @@ class Profile(models.Model):
     def save_user_profile(sender, instance, created, **kwargs):
         
         instance.profile.save()
+        
+#python3 manage.py admin_generator eductaion_app >> eductaion_app/admin.py
+#./manage.py admin_generator APP_NAME >> APP_NAME/admin.py
