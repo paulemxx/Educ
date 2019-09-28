@@ -157,8 +157,7 @@
                     <h4>Newsletter</h4>
                     <p>You can trust us. we only send promo offers,</p>
                     <div class="form-wrap" id="mc_embed_signup">
-                        <form target="_blank" action="{% url 'register' %}"
-                        method="get" class="form-inline">
+                        <form action="{% url 'contact_app:register' %}" method="post" class="form-inline">
                             <input class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address'"
                             required="" type="email">
                             <button class="click-btn btn btn-default">
