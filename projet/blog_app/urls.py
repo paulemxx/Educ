@@ -18,15 +18,10 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from filebrowser.sites import site
+from . import views
 
+app_name='blog_app'
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    #path('', include('blog_app.urls')),
-    #path('education/', include('education_app.urls')),
-    path('tinymce/', include('tinymce.urls')),
-    path('admin/filebrowser/', site.urls),
+    path('', views.index, name='home'),
+    
 ]
-if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-

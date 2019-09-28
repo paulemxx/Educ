@@ -42,6 +42,11 @@ INSTALLED_APPS = [
     'django_admin_generator',
     'tinymce',
     'filebrowser',
+    'blog_app.apps.BlogAppConfig',
+    'education_app.apps.EducationAppConfig',
+    'contact_app.apps.ContactAppConfig',
+    'config_app.apps.ConfigAppConfig',
+    'utilisateurs_app.apps.UtilisateursAppConfig',
 ]
 
 MIDDLEWARE = [
