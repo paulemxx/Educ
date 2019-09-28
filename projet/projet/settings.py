@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'education_app.apps.EducationAppConfig',
     'contact_app.apps.ContactAppConfig',
     'config_app.apps.ConfigAppConfig',
-    'utilisateurs_app.apps.UtilisateursAppConfig',
+    
 ]
 
 MIDDLEWARE = [
