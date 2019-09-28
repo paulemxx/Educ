@@ -9,6 +9,9 @@ class Contact_us(models.Model):
     email = models.EmailField(max_lenght=255)
     sujet = models.CharField(max_length=50)
     message = models.TextField()
+    statut = models.BooleanField(default = True)
+    date_add = models.DateTimeField(auto_now_add= True)
+    date_update = models.DateTimeField(auto_now= True)
 
     class Meta:
         """Meta definition for Contact_us."""
@@ -26,6 +29,9 @@ class Newsletter(models.Model):
 
     # TODO: Define fields here
     email = models.EmailField()
+    statut = models.BooleanField(default = True)
+    date_add = models.DateTimeField(auto_now_add= True)
+    date_update = models.DateTimeField(auto_now= True)
     
 
     class Meta:
