@@ -2,7 +2,9 @@
 le projet comporte 5 applications
 
 ##blog_app
+
     ```
+
     from django.db import models
     from tinymce import HTMLField
     from django.contrib.auth.models import User
@@ -54,7 +56,9 @@ le projet comporte 5 applications
 
 
     ```
+
 ##education_app
+
     ```
     from django.db import models
     from tinymce import HTMLField
@@ -151,7 +155,9 @@ le projet comporte 5 applications
     #python3 manage.py admin_generator eductaion_app >> eductaion_app/admin.py
     #./manage.py admin_generator APP_NAME >> APP_NAME/admin.py
     ```
+
 ##contact
+
     ```
     from django.db import models
 
@@ -200,4 +206,5 @@ le projet comporte 5 applications
             return self.email
 
     ```
+    
 ##config
