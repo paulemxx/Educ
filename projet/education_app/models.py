@@ -24,8 +24,7 @@ class Cours (models.Model):
     date_add = models.DateTimeField(auto_now_add= True)
     date_update = models.DateTimeField(auto_now= True)
 
-    def __str__(self):
-        return self.nom
+   
 
 class chapitre (models.Model):
     cour_id = models.ForeignKey('Cours', on_delete = models.CASCADE, related_name = 'cour_chap')

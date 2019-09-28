@@ -23,5 +23,5 @@ from . import views
 app_name='contact_app'
 urlpatterns = [
     path('', views.contact, name='contact'),
-    
+    path('Newsletter', views.Newsletter, name='Newsletter'),
 ]
